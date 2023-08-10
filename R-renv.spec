@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-renv
-Version  : 1.0.0
-Release  : 1
-URL      : https://cran.r-project.org/src/contrib/renv_1.0.0.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/renv_1.0.0.tar.gz
+Version  : 1.0.1
+Release  : 2
+URL      : https://cran.r-project.org/src/contrib/renv_1.0.1.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/renv_1.0.1.tar.gz
 Summary  : Project Environments
 Group    : Development/Tools
 License  : MIT
@@ -29,10 +29,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1689697715
+export SOURCE_DATE_EPOCH=1691686421
 
 %install
-export SOURCE_DATE_EPOCH=1689697715
+export SOURCE_DATE_EPOCH=1691686421
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -136,7 +136,7 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/renv/repos/src/contrib/PACKAGES
 /usr/lib64/R/library/renv/repos/src/contrib/PACKAGES.gz
 /usr/lib64/R/library/renv/repos/src/contrib/PACKAGES.rds
-/usr/lib64/R/library/renv/repos/src/contrib/renv_1.0.0.tar.gz
+/usr/lib64/R/library/renv/repos/src/contrib/renv_1.0.1.tar.gz
 /usr/lib64/R/library/renv/resources/WELCOME
 /usr/lib64/R/library/renv/resources/activate.R
 /usr/lib64/R/library/renv/resources/scripts-git-askpass.cmd
@@ -148,6 +148,7 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/renv/tests/testthat/_snaps/activate.md
 /usr/lib64/R/library/renv/tests/testthat/_snaps/bioconductor.md
 /usr/lib64/R/library/renv/tests/testthat/_snaps/bootstrap.md
+/usr/lib64/R/library/renv/tests/testthat/_snaps/caution.md
 /usr/lib64/R/library/renv/tests/testthat/_snaps/dependencies.md
 /usr/lib64/R/library/renv/tests/testthat/_snaps/dots.md
 /usr/lib64/R/library/renv/tests/testthat/_snaps/init.md
@@ -155,7 +156,7 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/renv/tests/testthat/_snaps/load.md
 /usr/lib64/R/library/renv/tests/testthat/_snaps/lockfile-read.md
 /usr/lib64/R/library/renv/tests/testthat/_snaps/preflight.md
-/usr/lib64/R/library/renv/tests/testthat/_snaps/pretty.md
+/usr/lib64/R/library/renv/tests/testthat/_snaps/repair.md
 /usr/lib64/R/library/renv/tests/testthat/_snaps/snapshot.md
 /usr/lib64/R/library/renv/tests/testthat/_snaps/status.md
 /usr/lib64/R/library/renv/tests/testthat/helper-aaa.R
@@ -219,6 +220,7 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/renv/tests/testthat/test-activate.R
 /usr/lib64/R/library/renv/tests/testthat/test-archive.R
 /usr/lib64/R/library/renv/tests/testthat/test-authentication.R
+/usr/lib64/R/library/renv/tests/testthat/test-autoload.R
 /usr/lib64/R/library/renv/tests/testthat/test-available-packages.R
 /usr/lib64/R/library/renv/tests/testthat/test-base64.R
 /usr/lib64/R/library/renv/tests/testthat/test-bind.R
@@ -227,6 +229,7 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/renv/tests/testthat/test-bootstrap.R
 /usr/lib64/R/library/renv/tests/testthat/test-cache.R
 /usr/lib64/R/library/renv/tests/testthat/test-call.R
+/usr/lib64/R/library/renv/tests/testthat/test-caution.R
 /usr/lib64/R/library/renv/tests/testthat/test-cellar.R
 /usr/lib64/R/library/renv/tests/testthat/test-checkout.R
 /usr/lib64/R/library/renv/tests/testthat/test-clean.R
@@ -274,7 +277,6 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/renv/tests/testthat/test-platform.R
 /usr/lib64/R/library/renv/tests/testthat/test-ppm.R
 /usr/lib64/R/library/renv/tests/testthat/test-preflight.R
-/usr/lib64/R/library/renv/tests/testthat/test-pretty.R
 /usr/lib64/R/library/renv/tests/testthat/test-profile.R
 /usr/lib64/R/library/renv/tests/testthat/test-profiles.R
 /usr/lib64/R/library/renv/tests/testthat/test-properties.R
@@ -285,6 +287,7 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/renv/tests/testthat/test-record.R
 /usr/lib64/R/library/renv/tests/testthat/test-records.R
 /usr/lib64/R/library/renv/tests/testthat/test-rehash.R
+/usr/lib64/R/library/renv/tests/testthat/test-reload.R
 /usr/lib64/R/library/renv/tests/testthat/test-remotes.R
 /usr/lib64/R/library/renv/tests/testthat/test-renvignore.R
 /usr/lib64/R/library/renv/tests/testthat/test-repair.R
