@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-renv
-Version  : 1.0.2
-Release  : 3
-URL      : https://cran.r-project.org/src/contrib/renv_1.0.2.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/renv_1.0.2.tar.gz
+Version  : 1.0.3
+Release  : 4
+URL      : https://cran.r-project.org/src/contrib/renv_1.0.3.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/renv_1.0.3.tar.gz
 Summary  : Project Environments
 Group    : Development/Tools
 License  : MIT
@@ -29,10 +29,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1692117769
+export SOURCE_DATE_EPOCH=1695143715
 
 %install
-export SOURCE_DATE_EPOCH=1692117769
+export SOURCE_DATE_EPOCH=1695143715
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -136,7 +136,7 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/renv/repos/src/contrib/PACKAGES
 /usr/lib64/R/library/renv/repos/src/contrib/PACKAGES.gz
 /usr/lib64/R/library/renv/repos/src/contrib/PACKAGES.rds
-/usr/lib64/R/library/renv/repos/src/contrib/renv_1.0.2.tar.gz
+/usr/lib64/R/library/renv/repos/src/contrib/renv_1.0.3.tar.gz
 /usr/lib64/R/library/renv/resources/WELCOME
 /usr/lib64/R/library/renv/resources/activate.R
 /usr/lib64/R/library/renv/resources/scripts-git-askpass.cmd
@@ -233,6 +233,7 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/renv/tests/testthat/test-cellar.R
 /usr/lib64/R/library/renv/tests/testthat/test-checkout.R
 /usr/lib64/R/library/renv/tests/testthat/test-clean.R
+/usr/lib64/R/library/renv/tests/testthat/test-cleanse.R
 /usr/lib64/R/library/renv/tests/testthat/test-config.R
 /usr/lib64/R/library/renv/tests/testthat/test-consent.R
 /usr/lib64/R/library/renv/tests/testthat/test-dcf.R
