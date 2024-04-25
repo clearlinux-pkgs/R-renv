@@ -7,7 +7,7 @@
 #
 Name     : R-renv
 Version  : 1.0.7
-Release  : 10
+Release  : 11
 URL      : https://cran.r-project.org/src/contrib/renv_1.0.7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/renv_1.0.7.tar.gz
 Summary  : Project Environments
